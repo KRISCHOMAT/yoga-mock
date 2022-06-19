@@ -13,16 +13,6 @@ gsap.fromTo(".mainHeading", { opacity: 0 }, { opacity: 0.5, duration: 1 });
 </template>
 
 <style>
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    color: white;
-  }
-  to {
-    opacity: 0.7;
-    color: black;
-  }
-}
 .headingContainer {
   position: relative;
   display: flex;
@@ -46,8 +36,6 @@ gsap.fromTo(".mainHeading", { opacity: 0 }, { opacity: 0.5, duration: 1 });
   color: black;
   font-size: 10vw;
   opacity: 0.7;
-  animation-name: fadeIn;
-  animation-duration: 3.5s;
   border-radius: 14px;
 }
 
