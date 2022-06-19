@@ -33,25 +33,31 @@ import image from "../images/Yoga3.jpg";
   width: 100%;
   height: 800px;
   object-fit: cover;
-  position: absolute;
+  position: fixed;
 }
 
 .mainHeading {
-  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
   padding: 20px;
+  width: 100%;
+  height: 50%;
   margin: 0 auto;
   background-color: white;
   color: black;
-  font-size: 10vw;
+  font-size: 20vw;
+  font-weight: 500;
   opacity: 0.7;
-  border-radius: 15px;
   animation-name: fadeIn;
   animation-duration: 3s;
 }
 
 @media screen and (max-width: 800px) {
   .mainHeading {
-    font-size: 14vw;
+    font-size: 20vw;
   }
   .headingContainer {
     height: 400px;

@@ -4,7 +4,7 @@ import image from "../images/Yoga1.jpg";
 
 <template>
   <div class="headingContainer">
-    <img class="headingImg" :src="image" />
+    <img class="footerImg" :src="image" />
     <h1 class="seperatorHeading">Namaste.</h1>
   </div>
 </template>
@@ -16,6 +16,13 @@ import image from "../images/Yoga1.jpg";
   color: white;
   font-size: 10vw;
   opacity: 0.7;
+}
+
+.footerImg {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  position: absolute;
 }
 
 @media screen and (max-width: 800px) {

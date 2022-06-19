@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
-/* color palette from <https://github.com/vuejs/theme> */
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Great+Vibes&family=Handlee&display=swap");
 :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
@@ -63,7 +62,7 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: var(--color-background);
+  background-color: white;
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -73,15 +72,15 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: white;
 }
 
 h1 {
-  font-family: "Great Vibes", cursive;
+  font-family: "Amatic SC", cursive;
   font-size: 5rem;
   margin-top: 10px;
 }
 h2 {
+  font-family: "Amatic SC", cursive;
   font-size: 2.5rem;
 }
 
@@ -94,6 +93,7 @@ a {
 
 p {
   font-size: 1.4rem;
+  font-family: "Handlee", cursive;
 }
 
 section {
@@ -125,4 +125,12 @@ ul {
 
 li {
   margin-top: 10px;
+}
+
+hr {
+  width: 300px;
+  margin: 40px auto;
+  height: 2px;
+  border: 1px solid black;
+  background-color: black;
 }

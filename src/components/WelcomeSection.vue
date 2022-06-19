@@ -16,12 +16,4 @@
   </section>
 </template>
 
-<style>
-hr {
-  width: 300px;
-  margin: 40px auto;
-  height: 2px;
-  border: 1px solid black;
-  background-color: black;
-}
-</style>
+<style></style>

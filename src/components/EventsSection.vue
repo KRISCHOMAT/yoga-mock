@@ -1,48 +1,35 @@
 <script lang="ts" setup>
-import bali from "../images/Bali.jpg";
-import training from "../images/training.jpg";
+import EventCard from "./EventCard.vue";
 </script>
 
 <template>
   <section>
     <h1>Events</h1>
     <div class="events">
-      <!-- Bali -->
-      <div class="event">
-        <h2>Retreat</h2>
-        <div class="eventImgContainer">
-          <img class="eventImg" :src="bali" />
-        </div>
-        <div class="description">
-          <p>
-            Join us this year in our retreat in Bali! With many yoga classes
-            during the day and other uplifting activities.
-          </p>
-          <div class="dates">
-            <p>When: 01.08.22 - 22.8.22</p>
-            <p>Price: 1500€ all incl.</p>
-            <p>Where: Bali</p>
-          </div>
-        </div>
-      </div>
-      <!-- Training -->
-      <div class="event">
-        <h2>Teacher Training</h2>
-        <div class="eventImgContainer">
-          <img class="eventImg" :src="training" />
-        </div>
-        <div class="description">
-          <p>
-            Become a yoga teacher and dive deep into the yoga practice! Learn
-            more about asanas and philosophy.
-          </p>
-          <div class="dates">
-            <p>When: 15.01.23 - 15.10.23</p>
-            <p>Price: 2000€ all incl.</p>
-            <p>Where: Our Studio</p>
-          </div>
-        </div>
-      </div>
+      <EventCard
+        title="Retreat"
+        img="src/images/Bali.jpg"
+        description="Join us this year in our retreat in Bali! With many yoga classes during the day and other uplifting activities."
+        when="01.08.22 - 22.8.22"
+        price="1500 all incl."
+        where="Bali"
+      />
+      <EventCard
+        title="Teacher Training"
+        img="src/images/training.jpg"
+        description="Become a yoga teacher and dive deep into the yoga practice! Learn more about asanas and philosophy."
+        when="15.01.23 - 15.10.23"
+        price="3000€ all incl."
+        where="Our Studio"
+      />
+      <EventCard
+        title="Gardening"
+        img="src/images/gardening.jpg"
+        description="Working for a few hours in our comminity garden. Afterwards we will cook together with what we harvested."
+        when="25.8.22 || 11:00 - 18:00"
+        price="Donation"
+        where="Our Studio"
+      />
     </div>
   </section>
 </template>
@@ -55,13 +42,6 @@ import training from "../images/training.jpg";
   align-items: center;
   justify-content: center;
   margin-bottom: 100px;
-}
-
-.event {
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .description {

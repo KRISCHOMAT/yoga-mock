@@ -61,7 +61,9 @@ import { CheckIcon } from "@vue-icons/feather";
       </div>
     </section>
   </div>
-  <hr />
+  <div class="hrContainer">
+    <hr />
+  </div>
 </template>
 
 <style>
@@ -80,7 +82,7 @@ import { CheckIcon } from "@vue-icons/feather";
   flex-wrap: wrap;
   position: relative;
   justify-content: space-around;
-  margin-bottom: 60px;
+  background-color: white;
 }
 
 .facts {
@@ -89,5 +91,10 @@ import { CheckIcon } from "@vue-icons/feather";
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.hrContainer {
+  border: 1px solid white;
+  background-color: white;
 }
 </style>
