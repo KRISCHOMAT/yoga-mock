@@ -1,8 +1,5 @@
 <script lang="ts" setup>
-import { gsap } from "gsap";
 import image from "../images/Yoga3.jpg";
-
-gsap.fromTo(".mainHeading", { opacity: 0 }, { opacity: 0.5, duration: 1 });
 </script>
 
 <template>
@@ -13,6 +10,17 @@ gsap.fromTo(".mainHeading", { opacity: 0 }, { opacity: 0.5, duration: 1 });
 </template>
 
 <style>
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    color: white;
+  }
+  to {
+    opacity: 0.7;
+    color: black;
+  }
+}
+
 .headingContainer {
   position: relative;
   display: flex;
@@ -36,12 +44,14 @@ gsap.fromTo(".mainHeading", { opacity: 0 }, { opacity: 0.5, duration: 1 });
   color: black;
   font-size: 10vw;
   opacity: 0.7;
-  border-radius: 14px;
+  border-radius: 15px;
+  animation-name: fadeIn;
+  animation-duration: 3s;
 }
 
 @media screen and (max-width: 800px) {
   .mainHeading {
-    font-size: 1vw;
+    font-size: 14vw;
   }
   .headingContainer {
     height: 400px;
