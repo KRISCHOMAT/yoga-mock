@@ -85,7 +85,8 @@ import { CheckIcon } from "@vue-icons/feather";
 }
 
 .facts {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 20px;

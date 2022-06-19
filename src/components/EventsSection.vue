@@ -18,12 +18,14 @@ import training from "../images/training.jpg";
             Join us this year in our retreat on Bali! With many yoga classes
             during the day and other uplifting activities.
           </p>
-          <p>When: 01.08.22 - 22.8.22</p>
-          <p>Price: 1500€ all incl.</p>
-          <p>Where: Bali</p>
+          <div class="dates">
+            <p>When: 01.08.22 - 22.8.22</p>
+            <p>Price: 1500€ all incl.</p>
+            <p>Where: Bali</p>
+          </div>
         </div>
       </div>
-      <!-- Bali -->
+      <!-- Training -->
       <div class="event">
         <h2>Teacher Training</h2>
         <div class="eventImgContainer">
@@ -32,11 +34,13 @@ import training from "../images/training.jpg";
         <div class="description">
           <p>
             Become a yoga teacher and dive deep into the yoga practice! Learn
-            more about asanas, philosophy and yoga life-style.
+            more about asanas and philosophy.
           </p>
-          <p>When: 15.01.23 - 15.10.23</p>
-          <p>Price: 2000€ all incl.</p>
-          <p>Where: Our Studio</p>
+          <div class="dates">
+            <p>When: 15.01.23 - 15.10.23</p>
+            <p>Price: 2000€ all incl.</p>
+            <p>Where: Our Studio</p>
+          </div>
         </div>
       </div>
     </div>
@@ -54,7 +58,7 @@ import training from "../images/training.jpg";
 }
 
 .event {
-  width: 500px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,5 +77,9 @@ import training from "../images/training.jpg";
 .eventImg {
   object-fit: cover;
   width: 100%;
+  height: 100%;
+}
+.dates {
+  margin-top: 15px;
 }
 </style>

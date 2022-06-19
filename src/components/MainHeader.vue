@@ -37,7 +37,7 @@ import image from "../images/Yoga3.jpg";
 
 @media screen and (max-width: 800px) {
   .mainHeading {
-    font-size: 15vw;
+    font-size: 13vw;
   }
   .headingContainer {
     height: 400px;
