@@ -15,7 +15,7 @@ import training from "../images/training.jpg";
         </div>
         <div class="description">
           <p>
-            Join us this year in our retreat on Bali! With many yoga classes
+            Join us this year in our retreat in Bali! With many yoga classes
             during the day and other uplifting activities.
           </p>
           <div class="dates">

@@ -31,7 +31,7 @@ import { CheckIcon } from "@vue-icons/feather";
           <div class="checkIcon">
             <CheckIcon size="40" />
           </div>
-          <p>Very easy drop in. Just come as you are!</p>
+          <p>Very easy drop in system. Just come as you are!</p>
         </div>
 
         <div class="factsItem">
@@ -46,8 +46,7 @@ import { CheckIcon } from "@vue-icons/feather";
             <CheckIcon size="40" />
           </div>
           <p>
-            Get a voucher for our coffee and have a snack of drink at our vegan
-            coffee.
+            Get a voucher and have a snack of drink at our vegan coffee-shop.
           </p>
         </div>
 
