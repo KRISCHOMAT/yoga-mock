@@ -8,22 +8,42 @@ function closeModal() {
 </script>
 
 <template>
-  <div class="modalContainer" :class="{ showModal: store.isModal }">
-    <button class="closeModal" @click="closeModal">
-      <XIcon size="30" />
-    </button>
-    <h2>{{ store.modalTitle }}</h2>
-    <label htmlFor="email">Email</label>
-    <input class="registerInput" name="email" />
-    <label htmlFor="name">Name</label>
-    <input class="registerInput" name="name" />
-    <button class="sendButton" @click="closeModal">Send</button>
+  <div class="modalBackground" :class="{ showModalBackground: store.isModal }">
+    <div class="modalContainer" :class="{ showModal: store.isModal }">
+      <button class="closeModal" @click="closeModal">
+        <XIcon size="30" />
+      </button>
+      <h2>{{ store.modalTitle }}</h2>
+      <label htmlFor="email">Email</label>
+      <input class="registerInput" name="email" />
+      <label htmlFor="name">Name</label>
+      <input class="registerInput" name="name" />
+      <button class="sendButton" @click="closeModal">Send</button>
+    </div>
   </div>
 </template>
 
 <style>
+.modalBackground {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -99;
+  background-color: rgba(0, 0, 0, 0);
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  transition: 1s;
+}
+
+.showModalBackground {
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 1s;
+}
+
 .modalContainer {
-  border: 4px solid black;
+  border: 3px solid black;
   position: fixed;
   z-index: 999;
   top: 20%;
