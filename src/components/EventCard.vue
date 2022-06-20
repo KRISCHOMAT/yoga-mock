@@ -7,15 +7,13 @@ const props = defineProps({
   price: String,
   where: String,
 });
-
-const imgSrc = `${props.img}`;
 </script>
 
 <template>
   <div class="event">
     <h2>{{ title }}</h2>
     <div class="eventImgContainer">
-      <img class="eventImg" :src="imgSrc" />
+      <img class="eventImg" :src="props.img" />
     </div>
     <div class="description">
       <p>
