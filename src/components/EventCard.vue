@@ -13,7 +13,6 @@ const props = defineProps({
 function handleClick() {
   store.isModal = !store.isModal;
   store.modalTitle = props.title;
-  console.log(store.isModal, store.modalTitle);
 }
 </script>
 

@@ -1,9 +1,19 @@
 <script lang="ts" setup>
-import { store } from "@/store";
+import { store, register } from "@/store";
 import { XIcon } from "@vue-icons/feather";
+import { ref } from "vue";
+const email = ref("");
+const name = ref("");
 
 function closeModal() {
   store.isModal = false;
+}
+
+function sendData() {
+  register(email.value, name.value, store.modalTitle);
+  closeModal();
+  email.value = "";
+  name.value = "";
 }
 </script>
 
@@ -15,10 +25,10 @@ function closeModal() {
       </button>
       <h2>{{ store.modalTitle }}</h2>
       <label htmlFor="email">Email</label>
-      <input class="registerInput" name="email" />
+      <input v-model="email" class="registerInput" name="email" />
       <label htmlFor="name">Name</label>
-      <input class="registerInput" name="name" />
-      <button class="sendButton" @click="closeModal">Send</button>
+      <input v-model="name" class="registerInput" name="name" />
+      <button class="sendButton" @click="sendData">Send</button>
     </div>
   </div>
 </template>
@@ -32,7 +42,6 @@ function closeModal() {
   background-color: rgba(0, 0, 0, 0);
   top: 0;
   left: 0;
-  overflow-y: hidden;
   transition: 1s;
 }
 
@@ -40,6 +49,7 @@ function closeModal() {
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.7);
   transition: 1s;
+  overflow: hidden;
 }
 
 .modalContainer {
