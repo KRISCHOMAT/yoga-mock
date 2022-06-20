@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-defineProps({
+const props = defineProps({
   title: String,
   img: String,
   description: String,
@@ -7,13 +7,15 @@ defineProps({
   price: String,
   where: String,
 });
+
+const imgUrl = new URL(`${props.img}`, import.meta.url);
 </script>
 
 <template>
   <div class="event">
     <h2>{{ title }}</h2>
     <div class="eventImgContainer">
-      <img class="eventImg" :src="img" />
+      <img class="eventImg" :src="imgUrl" />
     </div>
     <div class="description">
       <p>
