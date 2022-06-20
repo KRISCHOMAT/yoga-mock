@@ -17,7 +17,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section>
+  <section id="facts">
     <h1>Facts</h1>
     <div class="facts">
       <div class="factsItem">

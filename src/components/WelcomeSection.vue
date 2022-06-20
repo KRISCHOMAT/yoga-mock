@@ -7,7 +7,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section>
+  <section id="#welcome">
     <div class="content welcome">
       <h1>Welcome...</h1>
       <p>

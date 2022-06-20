@@ -59,6 +59,10 @@
   font-weight: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   color: var(--color-text);
@@ -85,7 +89,7 @@ h2 {
 }
 
 a {
-  color: var(--color-text);
+  color: white;
   text-decoration: none;
   font-size: 1.4rem;
   margin: 0;

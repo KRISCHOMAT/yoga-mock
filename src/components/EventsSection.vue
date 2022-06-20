@@ -20,7 +20,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section>
+  <section id="events">
     <h1>Events</h1>
     <div class="events">
       <EventCard

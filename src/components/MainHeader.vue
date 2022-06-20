@@ -59,12 +59,15 @@ onMounted(() => {
   padding: 20px;
   height: 50%;
   opacity: 0.7;
+  position: relative;
+  overflow: hidden;
 }
 
 .mainHeading {
   color: black;
   font-size: 20vw;
   font-weight: 500;
+  position: absolute;
 }
 
 @media screen and (max-width: 800px) {

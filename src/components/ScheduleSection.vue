@@ -15,7 +15,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section>
+  <section id="schedule">
     <h1>Schedule</h1>
     <div class="schedule">
       <h2>Monday</h2>

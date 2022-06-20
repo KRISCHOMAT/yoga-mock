@@ -4,9 +4,11 @@ import WelcomeSection from "./components/WelcomeSection.vue";
 import InfoSection from "./components/InfoSection.vue";
 import EventsSection from "./components/EventsSection.vue";
 import ImageSeperator from "./components/ImageSeperator.vue";
+import MainMenue from "./components/MainMenue.vue";
 </script>
 
 <template>
+  <MainMenue />
   <MainHeader />
   <WelcomeSection />
   <InfoSection />
