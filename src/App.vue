@@ -5,6 +5,7 @@ import InfoSection from "./components/InfoSection.vue";
 import EventsSection from "./components/EventsSection.vue";
 import ImageSeperator from "./components/ImageSeperator.vue";
 import MainMenue from "./components/MainMenue.vue";
+import RegisterModul from "./components/RegisterModul.vue";
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import MainMenue from "./components/MainMenue.vue";
   <WelcomeSection />
   <InfoSection />
   <EventsSection />
+  <RegisterModul />
   <ImageSeperator />
 </template>
 

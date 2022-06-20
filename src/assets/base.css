@@ -100,6 +100,10 @@ p {
   font-family: "Handlee", cursive;
 }
 
+button {
+  font-family: "Handlee", cursive;
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -137,4 +141,9 @@ hr {
   height: 2px;
   border: 1px solid black;
   background-color: black;
+}
+
+label {
+  font-family: "Handlee", cursive;
+  font-size: 1.4rem;
 }
