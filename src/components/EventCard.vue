@@ -51,7 +51,8 @@ defineProps({
 .event:hover::after {
   left: 10px;
   top: 53px;
-
+  border: 4px solid black;
+  opacity: 0.3;
   transition: 1s ease-in-out;
 }
 </style>

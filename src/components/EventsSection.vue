@@ -3,6 +3,20 @@ import EventCard from "./EventCard.vue";
 import bali from "/src/images/Bali.jpg";
 import trainging from "/src/images/training.jpg";
 import gardening from "/src/images/gardening.jpg";
+
+import gsap from "gsap";
+import { onMounted } from "vue";
+
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
+onMounted(() => {
+  gsap.to(".events", {
+    scrollTrigger: ".events",
+    opacity: 1,
+    duration: 4,
+  });
+});
 </script>
 
 <template>
@@ -45,6 +59,7 @@ import gardening from "/src/images/gardening.jpg";
   align-items: center;
   justify-content: center;
   margin-bottom: 100px;
+  opacity: 0;
 }
 
 .description {

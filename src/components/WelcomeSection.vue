@@ -1,6 +1,14 @@
+<script lang="ts" setup>
+import { onMounted } from "vue";
+import gsap from "gsap";
+onMounted(() => {
+  gsap.to(".welcome", { opacity: 1, duration: 2 });
+});
+</script>
+
 <template>
   <section>
-    <div class="content">
+    <div class="content welcome">
       <h1>Welcome...</h1>
       <p>
         to our beautiful yogastudio in a cozy backyard. You can enjoy our
@@ -16,4 +24,8 @@
   </section>
 </template>
 
-<style></style>
+<style>
+.welcome {
+  opacity: 0;
+}
+</style>

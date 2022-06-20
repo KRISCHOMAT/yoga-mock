@@ -1,11 +1,23 @@
 <script lang="ts" setup>
 import image from "../images/Yoga3.jpg";
+import { onMounted } from "vue";
+import gsap from "gsap";
+onMounted(() => {
+  const size = window.innerWidth;
+  gsap.fromTo(
+    ".mainHeading",
+    { x: -size },
+    { x: 0, duration: 1, ease: "back" }
+  );
+});
 </script>
 
 <template>
   <div class="headingContainer">
     <img class="headingImg" :src="image" />
-    <h1 class="mainHeading">The Yoga Base</h1>
+    <div class="mainHeadingContainer">
+      <h1 class="mainHeading">The Yoga Base</h1>
+    </div>
   </div>
 </template>
 
@@ -36,23 +48,23 @@ import image from "../images/Yoga3.jpg";
   position: fixed;
 }
 
-.mainHeading {
+.mainHeadingContainer {
+  background-color: white;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   border-top: 5px solid black;
   border-bottom: 5px solid black;
-  padding: 20px;
   width: 100%;
+  padding: 20px;
   height: 50%;
-  margin: 0 auto;
-  background-color: white;
+  opacity: 0.7;
+}
+
+.mainHeading {
   color: black;
   font-size: 20vw;
   font-weight: 500;
-  opacity: 0.7;
-  animation-name: fadeIn;
-  animation-duration: 3s;
 }
 
 @media screen and (max-width: 800px) {
